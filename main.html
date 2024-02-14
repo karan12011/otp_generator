@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otp Generator</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header">
+        <h1>OTP GENERATOR</h1>
+        <hr>
+      </div>
+      <div class="footer">
+        <div class="intro">
+          <p id="intro">Instructions:</p>
+          <ul>
+            <li>The OTP is valid for 120 seconds</li>
+            <li>Don't share your OTP with anyone</li>
+          </ul>
+        </div>
+        <div class="type">
+          <h2>Select the type of OTP :</h2>
+          <div class="radio">
+            <input type="radio" name="types" value="4" id="4_digit"><span class="radio_btn_text">4 Digit</span></input>
+            <input type="radio" name="types" value="6" id="6_digit"><span class="radio_btn_text">6 Digit</span></input>
+          </div>
+        </div>
+        <button onclick='generateOTP()' id="btn">Generate OTP</button>
+        <div class="otp_box">
+          <span id="otp_text">OTP:</span>
+          <spam id="otp">xxxx</spam>
+        </div>
+    </div>
+  </div>
+  <script src="./assets/java script/main.js"></script>
+</body>
+</html>
